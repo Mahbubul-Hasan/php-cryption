@@ -1,5 +1,5 @@
 {
     "require": {
-        "defuse/php-encryption": "^2.2"
+        "miladrahimi/phpcrypt": "^4.0"
     }
 }

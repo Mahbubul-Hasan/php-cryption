@@ -4,38 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4883e04489cbf9e49b2c39202b8a174",
+    "content-hash": "a8349cd89346b386d706e62173391877",
     "packages": [
         {
-            "name": "defuse/php-encryption",
-            "version": "v2.2.1",
+            "name": "miladrahimi/phpcrypt",
+            "version": "v4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/defuse/php-encryption.git",
-                "reference": "0f407c43b953d571421e0020ba92082ed5fb7620"
+                "url": "https://github.com/miladrahimi/phpcrypt.git",
+                "reference": "82cf113784edb79a3da24e33c3e327e4c9549583"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/defuse/php-encryption/zipball/0f407c43b953d571421e0020ba92082ed5fb7620",
-                "reference": "0f407c43b953d571421e0020ba92082ed5fb7620",
+                "url": "https://api.github.com/repos/miladrahimi/phpcrypt/zipball/82cf113784edb79a3da24e33c3e327e4c9549583",
+                "reference": "82cf113784edb79a3da24e33c3e327e4c9549583",
                 "shasum": ""
             },
             "require": {
                 "ext-openssl": "*",
-                "paragonie/random_compat": ">= 2",
-                "php": ">=5.4.0"
+                "php": ">=7.1"
             },
             "require-dev": {
-                "nikic/php-parser": "^2.0|^3.0|^4.0",
-                "phpunit/phpunit": "^4|^5"
+                "phpunit/phpunit": "7.*"
             },
-            "bin": [
-                "bin/generate-defuse-key"
-            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Defuse\\Crypto\\": "src"
+                    "MiladRahimi\\PhpCrypt\\": "src/",
+                    "MiladRahimi\\PhpCrypt\\Tests\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -44,75 +40,27 @@
             ],
             "authors": [
                 {
-                    "name": "Taylor Hornby",
-                    "email": "taylor@defuse.ca",
-                    "homepage": "https://defuse.ca/"
-                },
-                {
-                    "name": "Scott Arciszewski",
-                    "email": "info@paragonie.com",
-                    "homepage": "https://paragonie.com"
+                    "name": "Milad Rahimi",
+                    "email": "info@miladrahimi.com",
+                    "homepage": "http://miladrahimi.com",
+                    "role": "Developer"
                 }
             ],
-            "description": "Secure PHP Encryption Library",
+            "description": "Encryption, decryption, and password hashing tools for PHP projects",
+            "homepage": "http://miladrahimi.github.io",
             "keywords": [
                 "aes",
-                "authenticated encryption",
-                "cipher",
-                "crypto",
+                "asymmetric",
+                "crypt",
                 "cryptography",
+                "decrypt",
                 "encrypt",
-                "encryption",
+                "hash",
                 "openssl",
-                "security",
-                "symmetric key cryptography"
+                "rsa",
+                "symmetric"
             ],
-            "time": "2018-07-24T23:27:56+00:00"
-        },
-        {
-            "name": "paragonie/random_compat",
-            "version": "v9.99.99",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*|5.*",
-                "vimeo/psalm": "^1"
-            },
-            "suggest": {
-                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Paragon Initiative Enterprises",
-                    "email": "security@paragonie.com",
-                    "homepage": "https://paragonie.com"
-                }
-            ],
-            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
-            "keywords": [
-                "csprng",
-                "polyfill",
-                "pseudorandom",
-                "random"
-            ],
-            "time": "2018-07-02T15:55:56+00:00"
+            "time": "2020-01-14T10:37:13+00:00"
         }
     ],
     "packages-dev": [],

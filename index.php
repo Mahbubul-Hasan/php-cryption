@@ -1,14 +1,14 @@
 <?php
- 
-// @Mahbubul Hasan
+/**
+ * @package Php Cryption
+ * @copyright (C) 2020 Mahbubul Hasan
+ * @license MIT
+ */
+require("vendor\autoload.php");
 
-require 'vendor/autoload.php';
-use Defuse\Crypto\Key;
-use Defuse\Crypto\Crypto;
+use MiladRahimi\PhpCrypt\Symmetric;
 
-$plaintext = "Secret Key";
-$key = Key::createNewRandomKey();
-
-echo $encryptedData = Crypto::encrypt("Secret Key", $key);
-echo "</br>";
-echo $decryptedData = Crypto::decrypt($encryptedData, $key);
+$key = '0123456789';
+$symmetric = new Symmetric($key);
+var_dump($encryptedData = $symmetric->encrypt('Secret key'));
+echo $symmetric->decrypt($encryptedData);
